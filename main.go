@@ -67,7 +67,7 @@ func GetPosts() {
 func GetPostInfo(rss RssInfo) []string {
 	var msg = make([]string, 0)
 	now := time.Now().UTC()
-	startTime := now.Add(-24 * time.Hour)
+	startTime := now.Add(-1 * time.Hour)
 	start := time.Date(startTime.Year(), startTime.Month(), startTime.Day(), startTime.Hour(), 0, 0, 0, now.Location()).Unix()
 	end := time.Date(now.Year(), now.Month(), now.Day(), now.Hour(), 0, 0, 0, now.Location()).Unix()
 
