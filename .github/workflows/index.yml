@@ -1,10 +1,9 @@
 name: RSS Everyday
-on: 
-  workflow_dispatch:
+on:
   schedule:
-    - cron: '*/5 * * * *'
-#env:
-#  TZ: Asia/Shanghai
+      - cron: "*/5 * * * *"
+env:
+  TZ: Asia/Shanghai
 
 jobs:
     search-and-push:
